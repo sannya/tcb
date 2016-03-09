@@ -6840,7 +6840,7 @@ embed {
 body {
   /* For the Footer Menu */
   padding-bottom: 51px;
-  background: url(../img/deafaultlogo.png) no-repeat top left, url(../img/bg.jpg) repeat top left;
+  background: url(../img/line.png) no-repeat right top, url(../img/bg.jpg) repeat left top;
   margin: 40px 0;
 }
 .headNav {
@@ -6885,6 +6885,10 @@ body {
   .navbar-collapse .navbar-nav.navbar-right:last-child {
     margin-right: 0;
   }
+}
+.headNav li {
+  list-style: none;
+  display: inline;
 }
 .clear {
   clear: both;

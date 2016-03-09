@@ -4,9 +4,7 @@
     <div class="row header">
         <div class="col-md-12">
             <div class="headNav text-right">
-                <!--todo top navi einfügen-->
-                <a href="#">test1</a><a href="#">test2</a><a href="#">test</a>
-
+                <?php wp_nav_menu( array( 'theme_location' => 'top' ) );?>
             </div>
         </div>
     </div>

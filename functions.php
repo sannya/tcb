@@ -81,9 +81,11 @@ require_once('lib/bootstrap-custom-menu-widget.php');
 register_nav_menus(
     array(
         'main_menu' => 'Main Menu',
-        'footer_menu' => 'Footer Menu'
+        'footer_menu' => 'Footer Menu',
+        'top_menu' => ( 'Top Menu' ),
     )
 );
+
 
 ////////////////////////////////////////////////////////////////////
 // Register the Sidebar(s)
