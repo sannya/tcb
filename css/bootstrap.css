@@ -6902,7 +6902,7 @@ a:hover {
   border-bottom: none;
 }
 .logo {
-  background: url('../img/logo.png') no-repeat;
+  background: url('../img/logo.png') no-repeat center center;
   height: 66px;
   min-width: 100%;
   display: block;
