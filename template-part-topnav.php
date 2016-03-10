@@ -1,5 +1,5 @@
 <?php if (has_nav_menu('main_menu')) : ?>
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar-default" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">

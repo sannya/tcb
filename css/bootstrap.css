@@ -6892,8 +6892,14 @@ a:hover {
   }
 }
 .navbar-default .navbar-nav > li > a {
-  padding: 10px 2em;
-  text-align: left ;
+  padding: 8px 2em;
+  text-align: left;
+}
+.navbar-default .navbar-nav > li {
+  border-bottom: 1px solid #d9d9d9;
+}
+.navbar-default .navbar-nav > li:last-child {
+  border-bottom: none;
 }
 .logo {
   background: url('../img/logo.png') no-repeat;
