@@ -2,16 +2,13 @@
 
 <?php get_template_part('template-part', 'head'); ?>
 
-
-<?php get_template_part('template-part', 'topnav'); ?>
+<!---->
+<?php //get_template_part('template-part', 'topnav'); ?>
 
 <!-- start content container -->
 <div class="row dmbs-content">
 
-    <?php //left sidebar ?>
-    <?php get_sidebar( 'left' ); ?>
-
-    <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> dmbs-main">
+    <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> dmbs-main col-md-push-4">
 
         <?php
 
@@ -84,10 +81,14 @@
             <?php endif; ?>
    </div>
 
+    <?php //left sidebar ?>
+    <?php get_sidebar( 'left' ); ?>
+
    <?php //get the right sidebar ?>
    <?php get_sidebar( 'right' ); ?>
 </div>
 <!-- end content container -->
 
 <?php get_footer(); ?>
+
 

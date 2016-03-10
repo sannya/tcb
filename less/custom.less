@@ -1,15 +1,22 @@
 @gray: #d9d9d9;
+@red: #8D5554;
+@green: #449d44;
 
 body {
   /* For the Footer Menu */
   padding-bottom: 51px;
   background: url(../img/line.png) no-repeat right top, url(../img/bg.jpg) repeat left top;
-  margin:40px 0;
+  margin: 40px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
-.headNav {
-  border-bottom:3px solid @gray;
-  margin: 0 0 15px 0;
-  padding:0 0 15px 0;
+
+a {
+  color: @green;
+
+  &:hover {
+    color: darken(@green, 20%);
+  }
 }
 
 /* navigation */
@@ -19,21 +26,26 @@ body {
     border-top: 0;
     box-shadow: none;
     max-height: none;
-    padding-left:0;
-    padding-right:0;
+    padding-left: 0;
+    padding-right: 0;
   }
+
+  .navbar {
+    margin-bottom:0;
+  }
+
   .navbar-collapse.collapse {
     display: block !important;
     width: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
   }
+
   .navbar-collapse.in {
     overflow-x: visible;
   }
 
-  .navbar
-  {
+  .navbar {
     //max-width:300px;
     margin-right: 0;
     margin-left: 0;
@@ -43,19 +55,41 @@ body {
   .navbar-nav > li,
   .navbar-left,
   .navbar-right,
-  .navbar-header
-  {float:none !important;}
+  .navbar-header {
+    float: none !important;
+  }
 
-  .navbar-right .dropdown-menu {left:0;right:auto;}
+  .navbar-right .dropdown-menu {
+    left: 0;
+    right: auto;
+  }
+
   .navbar-collapse .navbar-nav.navbar-right:last-child {
     margin-right: 0;
   }
 }
 
+
+.logo {
+  background: url('../img/logo.png');
+  height: 66px;
+  width: 222px;
+  display: block;
+}
+
+
 .headNav {
-ul {  }
-li { list-style: none;
-  display: inline; }
+  ul {
+  }
+  li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0px 15px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 }
 
 .clear {
@@ -67,14 +101,40 @@ li { list-style: none;
   background: #fff;
   padding: 15px;
 
-  img{
-    //min-width:100%;
-    width:100%;
+  .screen(
+  { margin: 0 15px;},
+  { margin:0 15px;},
+  { margin: auto},
+  { margin: auto },
+  { margin: auto}
+  );
+}
+
+.footer {
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+
+  a {
+    color: lighten(@red, 25%);;
   }
+}
+
+.breadcrumb {
+  color: #000;
+  padding: 5px 0;
+  margin-bottom: 0px;
+  background: transparent;
 }
 
 .dmbs-header {
 
+  padding: 0 0 15px 0;
+
+  img {
+    //min-width:100%;
+    width: 100%;
+  }
 }
 
 .dmbs-header-img {
@@ -115,4 +175,10 @@ li { list-style: none;
 
 .dmbs-footer {
 
+}
+
+.line {
+  border-bottom: 3px solid @gray;
+  margin-bottom:15px;
+  padding-bottom:15px;
 }
