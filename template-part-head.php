@@ -32,7 +32,9 @@
 
             </div>
     </div>
+
     <div class="line"></div>
+    <div><?php echo nav_breadcrumb()?></div>
 
 
 

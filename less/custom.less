@@ -1,13 +1,18 @@
-@gray: #d9d9d9;
+@grey-tcb: #d9d9d9;
 @red: #8D5554;
-@green: #449d44;
+
 
 body {
   /* For the Footer Menu */
-  padding-bottom: 51px;
+  padding-bottom: 50px;
   background: url(../img/line.png) no-repeat right top, url(../img/bg.png) repeat left top;
+
+  .screen-xs(
+  {background: url(../img/bg.png) repeat left top;}
+  );
+
   margin: 40px 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
 
 }
 
@@ -18,6 +23,11 @@ a {
     color: darken(@green, 20%);
   }
 }
+
+h2.page-header {
+  margin-top:16px !important;
+}
+
 
 /* navigation */
 @media (min-width: 768px) {
@@ -69,6 +79,12 @@ a {
   }
 }
 
+.widget {
+  background: #f8f8f8;
+  padding:15px;
+  margin-top:20px;
+}
+
 .navbar-default .navbar-nav > li > a {
   padding: 8px 2em;
   text-align: left;
@@ -117,14 +133,14 @@ a {
 
 .dmbs-container {
   background: #fff;
-  padding: 15px;
+
 
   .screen(
-  { margin: 0 15px; },
-  { margin: 0 15px; },
-  { margin: auto },
-  { margin: auto },
-  { margin: auto }
+  { margin: 0 15px; padding:15px 15px; },
+  { margin: 0 auto },
+  { margin: auto; padding: 15px 30px; },
+  { margin: auto; padding: 15px 30px; },
+  { margin: auto; padding: 15px 30px; }
   );
 }
 
@@ -141,7 +157,7 @@ a {
 .breadcrumb {
   color: #000;
   padding: 5px 0;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   background: transparent;
 }
 
@@ -196,7 +212,38 @@ a {
 }
 
 .line {
-  border-bottom: 3px solid @gray;
+  border-bottom: 3px solid @grey-tcb;
   margin-bottom: 15px;
   padding-bottom: 15px;
+}
+
+.tablepress tfoot th, .tablepress thead th {
+  background-color: @grey-tcb !important;
+}
+input[type="submit"].wpcf7-form-control {
+  padding:10px 20px;
+  border:1px solid @green;
+  color: #fff;
+  background: @green;
+
+  &:hover {
+    cursor: pointer;
+    background: transparent;
+    border:1px solid @green;
+    color: @green;
+  };
+
+  &:focus{
+    background: darken(@green, 10%);
+  };
+}
+
+.form-control, #searchform #s {
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  border-radius: 0;
+}
+
+span.wpcf7-not-valid-tip {
+  color: @alert-danger-text;
 }
