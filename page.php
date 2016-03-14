@@ -6,7 +6,7 @@
 <div class="row dmbs-content">
 
 
-    <div class="col-md-<?php devdmbootstrap3_main_content (); ?> dmbs-main col-md-push-4">
+    <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> dmbs-main col-md-push-4">
 
         <?php // theloop
         if (have_posts()) : while (have_posts()) : the_post(); ?>
